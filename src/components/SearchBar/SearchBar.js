@@ -21,11 +21,11 @@ const SearchWrapper = styled.div`
     width: 20%;
 
     input{
-        padding: 10px;
+        padding: 8px;
         flex: 0.9;
         border: 1px solid var(--light-grey);
         border-right: none;
-        height: 30px;
+        /* height: 30px; */
 
         &::placeholder{
             color: var(--dark-grey);
@@ -40,6 +40,6 @@ const SearchWrapper = styled.div`
         color: var(--dark-grey);
         border: 1px solid var(--light-grey);
         border-left: none;
-        height: 30px;
+        padding: 8px;
     }
 `
