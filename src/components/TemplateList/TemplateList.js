@@ -1,20 +1,27 @@
 import styled from 'styled-components';
+import Template from  '../Template/Template';
 
 const TemplateList = () => {
     return (
-        <Wrapper>
+        <section>
             <SearchResult>
                 <TemplateCategory>all templates</TemplateCategory>
                 <TemplateCount>2000 templates</TemplateCount>
             </SearchResult>
-        </Wrapper>
+            <Wrapper>
+                <Template/>
+                <Template/>
+                <Template/>
+                <Template/>
+                <Template/>
+                <Template/>
+            </Wrapper>
+        </section>
     );
 }
  
 export default TemplateList;
 
-
-const Wrapper = styled.div``
 
 const SearchResult = styled.div`
     display: flex;
@@ -33,4 +40,12 @@ const TemplateCount = styled.p`
     text-transform: capitalize;
     font-size: .8em;
     color: var(--dark-grey);
+`
+
+const Wrapper = styled.div`
+    @media (min-width: 1200px){
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 50px;
+    }
 `

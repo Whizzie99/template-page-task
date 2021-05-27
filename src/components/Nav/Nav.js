@@ -24,8 +24,14 @@ const Wrapper = styled.div`
 
 const SearchArea = styled.div`
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
     padding: 20px 0;
     margin: 40px 0;
+
+    @media (min-width: 1200px){
+        flex-direction: row;
+        justify-content: space-between;
+    }
 `

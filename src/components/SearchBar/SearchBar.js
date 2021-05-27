@@ -18,7 +18,8 @@ export default SearchBar;
 const SearchWrapper = styled.div`
     display: flex;
     align-items: center;
-    width: 20%;
+    width: 100%;
+    margin: 20px 0;
 
     input{
         padding: 8px;
@@ -41,5 +42,10 @@ const SearchWrapper = styled.div`
         border: 1px solid var(--light-grey);
         border-left: none;
         padding: 8px;
+    }
+
+    @media (min-width: 1200px){
+        width: 20%;
+        margin: 0;
     }
 `

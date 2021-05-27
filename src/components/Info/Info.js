@@ -21,6 +21,7 @@ const Wrapper = styled.div`
     align-items: center;
     padding: 20px 0;
     background-color: var(--light-pink);
+    padding: 20px 10px;
 
     span{
         display: flex;
@@ -28,6 +29,15 @@ const Wrapper = styled.div`
         color: var(--orange);
         margin-right: 20px;
         height: 100%;
+    }
+
+    p{
+        font-size: .8em;
+
+
+        @media (min-width: 1200px){
+            font-size: 1em;
+        }
     }
 
 `

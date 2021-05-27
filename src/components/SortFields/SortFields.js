@@ -52,14 +52,20 @@ export default SortFields;
 const Wrapper = styled.div`
     display: flex;
     align-items: center;
-    width: 40%;
+    width: 100%;
+    margin: 20px 0;
+
+    @media (min-width: 1200px){
+        width: 40%;
+        margin: 0;
+    }
 `
 
 const SortText = styled.span`
     font-size: .8em;
     color: var(--dark-grey);
     text-transform: capitalize;
-    margin: 0 10px;
+    margin-right: 10px;
     flex: 0.1;
     text-align: center;
     white-space: nowrap;
@@ -67,6 +73,10 @@ const SortText = styled.span`
 
     &:after{
         content: ':'
+    }
+
+    @media (min-width: 1200px){
+        margin: 0 10px;
     }
 `
 
